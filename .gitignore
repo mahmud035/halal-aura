@@ -1,0 +1,18 @@
+# Private client source — NEVER publish
+frontend/
+admin/
+backend/
+_meta/
+
+# Local tooling & config
+.claude/
+.vscode/
+CLAUDE.md
+
+# Standard
+**/node_modules/
+**/.env
+**/.env.*
+**/dist/
+**/build/
+.DS_Store
