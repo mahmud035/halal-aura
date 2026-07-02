@@ -2,6 +2,8 @@
 
 > A live, UK-based premium halal fragrance store serving UK customers, with international fulfilment built in — built and operated end-to-end as a three-service system (storefront, admin, API).
 
+---
+
 **Author:** Md. Mahamudul Hasan Pavel · GitHub [@mahmud035](https://github.com/mahmud035) · [LinkedIn](https://www.linkedin.com/in/mahmud035/) · [Portfolio](https://mahamudulhasan.vercel.app/)
 
 **Role:** Sole full-stack developer — architecture, delivery, and production operations.
