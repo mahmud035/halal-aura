@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://res.cloudinary.com/assetvault/image/upload/v1773059980/halal-aura-brand-logo.webp" alt="Halal Aura" width="192" />
+</p>
+
 # Halal Aura — Premium Halal Fragrance E-Commerce Platform
 
 > A live, UK-based premium halal fragrance store serving UK customers, with international fulfilment built in — built and operated end-to-end as a three-service system (storefront, admin, API).
@@ -81,7 +85,7 @@ Three independently deployed services share one API and one database. The two fr
 
 **Data flow.** Both frontends talk to a single versioned REST API. All server state on the clients is managed through TanStack Query; the API owns all business logic and database access. Payment providers reach the API asynchronously via webhooks; the storefront confirmation page reconciles final state by polling the API, which in turn queries the live provider — so the customer sees a correct result even when a webhook is delayed.
 
-**1:1 feature mirroring.** The API is organised into feature modules (`auth`, `product`, `category`, `collection`, `cart`, `wishlist`, `order`, `payment`, `contact`, `newsletter`, `upload`, `address-lookup`, `user`, `admin`). Each frontend mirrors the domains it needs one-to-one. API response shapes define the frontend types, so a contract change surfaces as a **TypeScript compile error**, not a runtime surprise.
+**1:1 feature mirroring.** The API exposes **132 endpoints** across 14 feature modules (`auth`, `product`, `category`, `collection`, `cart`, `wishlist`, `order`, `payment`, `contact`, `newsletter`, `upload`, `address-lookup`, `user`, `admin`). Each frontend mirrors the domains it needs one-to-one. API response shapes define the frontend types, so a contract change surfaces as a **TypeScript compile error**, not a runtime surprise.
 
 **Auth model.** Authentication uses **JWT in HTTP-only cookies** (not bearer tokens), scoped to `.halalaura.co.uk` so the cookie is shared across the storefront, admin, and API subdomains. Google OAuth is verified server-side. Guests can shop and check out without an account.
 
